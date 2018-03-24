@@ -18,14 +18,13 @@
         <h1>Chat Away!</h1>
     </div>
 
-    <div class = "usernameField">
-        <form target="index.html" onsubmit="return false">
-                <p class = "usernameField">Insert your username: </p>
-                <input class = "usernameField" type="text" name="username" required><br /><br />
-                <button onclick = "preventDefault()">Enter the chat room</button>
-        </form>
-    </div>
-    <!-- Put your code in the chat.js file -->
+
+    <form class = "usernameField" onsubmit="return false;">
+        <p class = "usernameField">Insert your username: </p>
+        <input id = "username" type="text" name="username" required><br /><br />
+        <input type="submit" value="Enter" onclick='ChatApp.createOrUpdateUser(document.getElementById("username").value, -1, function(userData) { console.log(userData)} );' target="index.html">
+    </form>
+
     <script src="./scripts/chat.js"></script>
 </body>
 </html>
