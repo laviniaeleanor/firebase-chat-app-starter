@@ -17,6 +17,14 @@
     <div class = "header">
         <h1>Chat Away!</h1>
     </div>
+
+    <div class = "usernameField">
+        <form target="index.html" onsubmit="return false">
+                <p class = "usernameField">Insert your username: </p>
+                <input class = "usernameField" type="text" name="username" required><br /><br />
+                <button onclick = "preventDefault()">Enter the chat room</button>
+        </form>
+    </div>
     <!-- Put your code in the chat.js file -->
     <script src="./scripts/chat.js"></script>
 </body>
