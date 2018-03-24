@@ -2,7 +2,7 @@
 function replaceForm(){
     var form = document.getElementById("welcome");
     console.log(form);
-    form.innerHTML = `<p>Welcome to Chat Away!!</p> </br> <a href= 'index.html'> Enter the chat room!</a>`;
+    form.innerHTML = `<p>Bienvenus!!</p> </br> <a href= 'index.html'><p> Enter le chat room!</p></a>`;
 };
 
 function submitUsername(){
