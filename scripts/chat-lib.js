@@ -60,7 +60,7 @@ ChatApp.createOrUpdateUser = function(userName, colorNum, callback, errHandler) 
 };
 
 // Creates a new message with given text and user name.
-// This function doesn't take a callback, because the new message will be 
+// This function doesn't take a callback, because the new message will be
 // received by anyone listening through ChatApp.addMessageListener.
 ChatApp.newMessage = function(userName, text) {
   db.collection("messages").add({
