@@ -5,7 +5,7 @@
     <title>ChatAway</title>
 
     <link href="styles/main.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Permanent+Marker" rel="stylesheet">
 
     <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-firestore.js"></script>
@@ -20,11 +20,11 @@
         <h1>Chat Away!</h1>
     </div>
 
-    <div id= "welcome">
+    <div id= "welcome" >
         <form class = "usernameField" onsubmit="return false;">
         <p class = "usernameField">Insert your username: </p>
-        <input id = "username" type="text" name="username" required><br /><br />
-        <a href="./index.html"><input type="submit" value="Enter" onclick='submitUsername();'></a>
+        <input class = "usernameField" id = "username" type="text" name="username" required><br /><br />
+        <input class = "usernameField" type="submit" value="Enter" onclick='submitUsername();'>
         </form>
     </div>
     <script src="./scripts/chat.js"></script>

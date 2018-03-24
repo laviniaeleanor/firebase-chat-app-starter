@@ -1,7 +1,8 @@
+
 function replaceForm(){
     var form = document.getElementById("welcome");
     console.log(form);
-    form.innerHTML = "<p>Welcome <script>return `${username}`</script>!!! </br> <a href= 'index.html'> Enter the chat room!</a>";
+    form.innerHTML = `<p>Welcome to Chat Away!!</p> </br> <a href= 'index.html'> Enter the chat room!</a>`;
 };
 
 function submitUsername(){

@@ -6,7 +6,7 @@ h1 {
     font-family: 'Permanent Marker', cursive;
     margin: auto;
     text-align: center;
-    font-size: 3.5em; /* 40px/16=2.5em */
+    font-size: 3.5em;
 }
 
 .usernameField {
@@ -14,10 +14,23 @@ h1 {
     padding-top: 5%;
 }
 
-p.usernameField {
+p{
     font-size: 2em;
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
 }
 
 input.usernameField {
     padding: 20px 20px;
+    font-family: 'Comfortaa';
+}
+
+.welcome{
+    display : block;
+}
+
+a{
+    align-content: center;
+    font-size: 1.5em;
+    font-family: 'Comfortaa', cursive;
 }
