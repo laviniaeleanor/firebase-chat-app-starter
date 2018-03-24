@@ -12,12 +12,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./scripts/firebaseConfig.js"></script>
     <script src="./scripts/chat-lib.js"></script>
+    <script src="./scripts/chat.js"></script>
+
 </head>
 <body>
     <div class = "header">
         <h1>Chat Away!</h1>
     </div>
-    <!-- Put your code in the chat.js file -->
+
+    <div id= "welcome">
+        <form class = "usernameField" onsubmit="return false;">
+        <p class = "usernameField">Insert your username: </p>
+        <input id = "username" type="text" name="username" required><br /><br />
+        <a href="./index.html"><input type="submit" value="Enter" onclick='submitUsername();'></a>
+        </form>
+    </div>
     <script src="./scripts/chat.js"></script>
 </body>
 </html>
