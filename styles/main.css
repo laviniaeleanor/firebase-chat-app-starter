@@ -1,0 +1,10 @@
+body {
+    background-image : url("../hypnotize.png");
+}
+
+h1 {
+    font-family: 'Permanent Marker', cursive;
+    margin: auto;
+    text-align: center;
+    font-size: 3.5em; /* 40px/16=2.5em */
+}
