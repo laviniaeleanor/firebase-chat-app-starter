@@ -17,7 +17,9 @@
 </head>
 <body>
 
-   <h1>Le Chat.</h1>
+    <div class="header">
+        <h1>Le Chat.</h1>
+    </div>
 
     <div id= "welcome" >
         <form class = "usernameField" onclick = "return false">
@@ -42,7 +44,7 @@
         <div class = "messageSendbox">
             <form id = "messageSend" onsubmit="return false;">
 
-                <input id = "messageBox" id = "message" type="text" name="message" required><br />
+                <input id = "messageBox" type="text" name="message" required><br />
                 <input id = "messageSendButton" type="submit" value="Submit" onclick="submitMessage();">
 
             </form>
@@ -52,9 +54,9 @@
     <div class = "activeUsersSpace">
         <h2>Active Users</h2>
         <hr />
-        <p id="activeUsers">
+        <ul id="activeUsers">
 
-        </p>
+        </ul>
     </div>
 
     <!-- Put your code in the chat.js file -->

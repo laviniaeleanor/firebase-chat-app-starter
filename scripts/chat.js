@@ -16,14 +16,20 @@ function submitMessage(){
 ChatApp.addMessageListener(handleMessage);
 
 function handleMessage (changeType, messageId, messageData) {
-    //var timestamp = `${messageData.timestamp.getDate()} ${messageData.timestamp.getMonth()} ${messageData.timestamp.getYear()}`;
-    //console.log(timestamp);
-    document.getElementById("dbMessages").innerHTML += `<p class="messageSpace">${messageData.timestamp}<br><strong>${messageData.userName}</strong> : ${messageData.text}\n</p>`;
+    var username = document.getElementById("username").value;
+    //var timestamp = `${messageData.timestamp.getHours()} : ${messageData.timestamp.getMinutes()}, <strong>${messageData.timestamp.getDate()} ${messageData.timestamp.getMonth()}</strong> `;
+    function callbackUserDatabase(userData) {
+        return userData;
+        console.log(userData);
+    };
+        var userColor = ChatApp.getUser(username, callbackUserDatabase(username));
+        console.log(userColor);
+    document.getElementById("dbMessages").innerHTML += `<p class="messageSpace" style = "color: ${userColor}">${messageData.timestamp}<br><strong>${messageData.userName}</strong> : ${messageData.text}\n</p>`;
+
 }
 
-ChatApp.addMessageListener(handleActiveUsers);
 
-var userNames = [];
+ChatApp.addMessageListener(handleActiveUsers);
 
 function handleActiveUsers (changeType,messageId, messageData) {
     var user = messageData.userName;
@@ -32,13 +38,9 @@ function handleActiveUsers (changeType,messageId, messageData) {
     //console.log(timeMessage, timeNow);
 
     if (timeNow - timeMessage <= (5*60*1000)) {
-        userNames.push(user);
-        console.log(userNames);
-        return userNames;
+        var activeUsersSpace = document.getElementById("activeUsers");
+        if (activeUsersSpace.innerHTML.indexOf(user) !== -1) {
+        activeUsersSpace.innerHTML += `<p><strong>${user}</strong>\n</p>`;
+        }
     }
-
 }
-
-console.log(userNames);
-
-var uniqueNames = [];

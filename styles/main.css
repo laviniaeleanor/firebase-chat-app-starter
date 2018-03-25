@@ -22,7 +22,7 @@ h2 {
     font-weight: lighter;
     margin: auto;
     text-align: left;
-    font-size:1.5em;
+    font-size:1em;
 }
 
 .usernameField {
@@ -55,7 +55,7 @@ input.usernameField {
 .messageSpace {
     display: inline-block;
     width: 60%;
-    padding: 10px;
+    padding: 2px;
     margin: 0;
     background:rgba(255,255,255, 0.6);
 }
@@ -64,8 +64,8 @@ p.messageSpace{
     text-align: justify;
 }
 
-.activeUsers {
-    display: inline-block;
+.activeUsersSpace {
+    display: inline;
     width: 30%;
     padding: 10px;
     margin: 0;
@@ -75,4 +75,19 @@ p.messageSpace{
 
 hr {
     color: red;
+}
+
+#messageBox{
+    height: 10%;
+    width: 60%;
+    font-family: 'IBM Plex Serif', serif;
+    padding-left: 10px;
+    display: inline;
+}
+
+#messageSendButton {
+    font-family: 'IBM Plex Serif', serif;
+    padding: 10px 10px;
+    margin-top: 10px;
+    display: inline;
 }
