@@ -16,5 +16,7 @@ function submitMessage(){
 ChatApp.addMessageListener(handleMessage);
 
 function handleMessage (changeType, messageId, messageData) {
-    document.getElementById("dbMessages").innerText += `${messageData.username} : ${messageData.text}\n`;
+    //var timestamp = `${messageData.timestamp.getDate()} ${messageData.timestamp.getMonth()} ${messageData.timestamp.getYear()}`;
+    //console.log(timestamp);
+    document.getElementById("dbMessages").innerHTML += `<p class="messageSpace">${messageData.timestamp}<br><strong>${messageData.userName}</strong> : ${messageData.text}\n</p>`;
 }
