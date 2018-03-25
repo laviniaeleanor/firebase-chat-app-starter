@@ -4,9 +4,8 @@
 }
 
 body {
-    background-image : url("../Images/lechatnoir.jpg");
+    background-image : url("../Images/book-botanical-cactus.jpg");
     background-size: cover;
-    background-color: rgba(255,255,255, 0.2);
 }
 
 h1 {
@@ -22,28 +21,33 @@ h2 {
     font-family: 'IBM Plex Serif', serif;
     font-weight: lighter;
     margin: auto;
-    text-align: center;
+    text-align: left;
     font-size:1.5em;
 }
 
 .usernameField {
-    text-align: center;
-    padding-top: 50px;
+    text-align: left;
+    padding-top: 10px;
 }
 
 p{
-    font-size: 2em;
+    font-size: 1em;
     font-family: 'IBM Plex Serif', serif;
     text-align: center;
 }
 
+input.username {
+    padding-left: 10px;
+    text-size: 2em;
+}
+
 input.usernameField {
-    padding: 20px 20px;
+    padding: 10px 10px;
     font-family: 'IBM Plex Serif', serif;
 }
 
 .welcome{
-    display : block;
+    display : inline-block;
 }
 
 

@@ -16,21 +16,26 @@
 
 </head>
 <body>
-    <div class = "header">
-        <h1>Le Chat.</h1>
-    </div>
+
+   <h1>Le Chat.</h1>
 
     <div id= "welcome" >
-        <form class = "usernameField" onsubmit="return false;">
-        <p class = "usernameField">Insert your username: </p>
-        <input class = "usernameField" id = "username" type="text" name="username" required><br /><br />
-        <input class = "usernameField" type="submit" value="Enter" onclick='ChatApp.createOrUpdateUser(document.getElementById("username").value, -1, function(userData) { console.log(userData)} );'>
+        <form class = "usernameField" onclick = "return false">
+        <h2 class = "usernameField">Insert your username: </h2>
+        <input class = "usernameField" id = "username" type="text" name="username" required>
+        <input class = "usernameField" type="submit" value="Enter" onclick="submitUsername();">
         </form>
     </div>
 
     <div class = "messageSpace">
         <div class = "messageContainer">
+
             <h2>Messages</h2>
+
+            <p id="dbMessages">
+
+
+            </p>
         <hr />
         </div>
 
@@ -38,7 +43,7 @@
             <form id = "messageSend" onsubmit="return false;">
 
                 <input id = "messageBox" id = "message" type="text" name="message" required><br />
-                <input id = "messageSendButton" type="submit" value="Submit" onclick='ChatApp.newMessage(document.getElementById("username").value, document.getElementById("messageBox").value) {console.log(userData)}'>
+                <input id = "messageSendButton" type="submit" value="Submit" onclick="submitMessage();">
 
             </form>
         </div>
